@@ -69,7 +69,7 @@ def main : IO UInt32 := do
   -- Build category theory slides
   let categoriesDir := "_site/categories"
   let _ ← slidesMain (config := { config with outputDir := categoriesDir }) (doc := %doc Categories.Basic)
-  postProcessSlides categoriesDir "baif.png" "Category Theory" "Introduction to Categories" "Beneficial AI Foundation"
+  postProcessSlides categoriesDir "baif.png" "Category Theory" "From Sets to Categories" "Beneficial AI Foundation"
 
   -- Build monads slides
   let monadsDir := "_site/monads"
