@@ -114,4 +114,4 @@ backgroundColor := some "#0073A3"
 
 *Beneficial AI Foundation*
 
-beneficial.ai
+beneficialaifoundation.org

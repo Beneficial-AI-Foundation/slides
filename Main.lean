@@ -33,8 +33,8 @@ def postProcessSlides (outputDir : FilePath) (logoFile : String) (title : String
   let html := html.replace titleSlideOld titleSlideNew
 
   -- Transform Thank You slide
-  let thankSlideOld := s!"<section data-background-color=\"#0073A3\">\n          <h2>\n            Thank You</h2>\n          <p>\n            <em>{org}</em></p>\n          <p>\n            beneficial.ai</p>\n          </section>"
-  let thankSlideNew := s!"<section class=\"title-slide\">\n          <div class=\"top-area\"><img class=\"logo\" src=\"{logoFile}\" alt=\"BAIF Logo\"></div>\n          <div class=\"blue-band\"><h1>Thank You</h1>\n          <div class=\"meta\"><strong>{org}</strong><br><a href=\"https://beneficial.ai\" style=\"color:#93c5fd;\">beneficial.ai</a></div>\n          <div class=\"date\"></div>\n          </div></section>"
+  let thankSlideOld := s!"<section data-background-color=\"#0073A3\">\n          <h2>\n            Thank You</h2>\n          <p>\n            <strong>{org}</strong></p>\n          <p>\n            beneficialaifoundation.org\n</p>\n          </section>"
+  let thankSlideNew := s!"<section class=\"title-slide\">\n          <div class=\"top-area\"><img class=\"logo\" src=\"{logoFile}\" alt=\"BAIF Logo\"></div>\n          <div class=\"blue-band\"><h1>Thank You</h1>\n          <div class=\"meta\"><strong>{org}</strong><br><a href=\"https://beneficialaifoundation.org\" style=\"color:#93c5fd;\">beneficialaifoundation.org</a></div>\n          <div class=\"date\"></div>\n          </div></section>"
   let html := html.replace thankSlideOld thankSlideNew
 
   IO.FS.writeFile htmlPath html

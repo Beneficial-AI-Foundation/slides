@@ -57,7 +57,7 @@ html, body {
 .slide-header {
   display: flex;
   align-items: center;
-  gap: 0;
+  gap: 0.8em;
   margin-bottom: 0.5em;
 }
 .slide-header img {
