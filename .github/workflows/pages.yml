@@ -41,6 +41,11 @@ jobs:
           lake build tutorialsMain
           .lake/build/bin/tutorialsMain
 
+      - name: Copy shared lib directory
+        run: |
+          # Copy lib from one output to root for shared assets
+          cp -r _site/categories/lib _site/lib || true
+
       - name: Create index page
         run: |
           cat > _site/index.html << 'EOF'
