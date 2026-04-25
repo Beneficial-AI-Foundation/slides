@@ -28,13 +28,13 @@ def postProcessSlides (outputDir : FilePath) (logoFile : String) (title : String
   let html := html.replace "<section data-transition=\"fade\">\n" s!"<section data-transition=\"fade\">\n          {slideHeader}\n"
 
   -- Transform title slide
-  let titleSlideOld := s!"<section data-background-color=\"#0073A3\">\n          <h2>\n            {title}</h2>\n          <p>\n            {subtitle}</p>\n          <p>\n            {org}</p>\n          </section>"
-  let titleSlideNew := s!"<section class=\"title-slide\">\n          <div class=\"top-area\"><img class=\"logo\" src=\"{logoFile}\" alt=\"BAIF Logo\"></div>\n          <div class=\"blue-band\"><h1>{title}</h1>\n          <div class=\"meta\"><strong>{subtitle}</strong></div>\n          <div class=\"date\">{org}</div>\n          </div></section>"
+  let titleSlideOld := s!"<section data-background-color=\"#22C55E\">\n          <h2>\n            {title}</h2>\n          <p>\n            {subtitle}</p>\n          <p>\n            {org}</p>\n          </section>"
+  let titleSlideNew := s!"<section class=\"title-slide\">\n          <div class=\"top-area\"><img class=\"logo\" src=\"{logoFile}\" alt=\"BAIF Logo\"></div>\n          <div class=\"thick-band\"><h1>{title}</h1>\n          <div class=\"meta\"><strong>{subtitle}</strong></div>\n          <div class=\"date\">{org}</div>\n          </div></section>"
   let html := html.replace titleSlideOld titleSlideNew
 
   -- Transform Thank You slide
-  let thankSlideOld := s!"<section data-background-color=\"#0073A3\">\n          <h2>\n            Thank You</h2>\n          <p>\n            <strong>{org}</strong></p>\n          <p>\n            beneficialaifoundation.org\n</p>\n          </section>"
-  let thankSlideNew := s!"<section class=\"title-slide\">\n          <div class=\"top-area\"><img class=\"logo\" src=\"{logoFile}\" alt=\"BAIF Logo\"></div>\n          <div class=\"blue-band\"><h1>Thank You</h1>\n          <div class=\"meta\"><strong>{org}</strong><br><a href=\"https://beneficialaifoundation.org\" style=\"color:#93c5fd;\">beneficialaifoundation.org</a></div>\n          <div class=\"date\"></div>\n          </div></section>"
+  let thankSlideOld := s!"<section data-background-color=\"#22C55E\">\n          <h2>\n            Thank You</h2>\n          <p>\n            <strong>{org}</strong></p>\n          <p>\n            beneficialaifoundation.org\n</p>\n          </section>"
+  let thankSlideNew := s!"<section class=\"title-slide\">\n          <div class=\"top-area\"><img class=\"logo\" src=\"{logoFile}\" alt=\"BAIF Logo\"></div>\n          <div class=\"thick-band\"><h1>Thank You</h1>\n          <div class=\"meta\"><strong>{org}</strong><br><a href=\"https://beneficialaifoundation.org\" style=\"color:#bbf7d0;\">beneficialaifoundation.org</a></div>\n          <div class=\"date\"></div>\n          </div></section>"
   let html := html.replace thankSlideOld thankSlideNew
 
   IO.FS.writeFile htmlPath html

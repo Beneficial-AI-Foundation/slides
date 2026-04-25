@@ -11,5 +11,5 @@ echo "Generating slides..."
 
 echo ""
 echo "Starting server at http://localhost:8000"
-echo "Press Ctrl+C to stop"
-python3 -m http.server -d _site 8000
+python3 -m http.server -d _site 8000 &
+echo "Server running in background (PID: $!)"

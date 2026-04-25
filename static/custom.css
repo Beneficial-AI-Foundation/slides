@@ -13,6 +13,7 @@ html, body {
 }
 
 :root {
+  --baif-green: #22C55E;
   --baif-teal: #0891b2;
   --baif-blue: #0073A3;
   --text-dark: #1e293b;
@@ -68,7 +69,7 @@ html, body {
   content: '';
   flex: 1;
   height: 1.5px;
-  background: var(--baif-teal);
+  background: var(--baif-green);
 }
 
 /* ── Title slide ── */
@@ -86,8 +87,8 @@ html, body {
 .title-slide .logo {
   height: 140px;
 }
-.title-slide .blue-band {
-  background: #0073A3;
+.title-slide .thick-band {
+  background: #22C55E;
   flex: 1;
   padding: 1em 1.5em;
   display: flex;
@@ -153,7 +154,7 @@ html, body {
 }
 
 .reveal a {
-  color: #0e7490;
+  color: #16a34a;
   font-weight: 600;
 }
 
@@ -206,31 +207,34 @@ html, body {
 }
 
 /* ── Dark background slides ── */
-.reveal section[data-background-color="#0073A3"] {
+.reveal section[data-background-color="#22C55E"] {
   display: flex !important;
   flex-direction: column;
   justify-content: center;
 }
-.reveal section[data-background-color="#0073A3"] h1,
-.reveal section[data-background-color="#0073A3"] h2 {
+.reveal section[data-background-color="#22C55E"] h1,
+.reveal section[data-background-color="#22C55E"] h2 {
   color: #ffffff !important;
   font-size: 2em;
   font-weight: 300;
 }
-.reveal section[data-background-color="#0073A3"] p,
-.reveal section[data-background-color="#0073A3"] li {
+.reveal section[data-background-color="#22C55E"] p,
+.reveal section[data-background-color="#22C55E"] li {
   color: rgba(255, 255, 255, 0.9);
   font-size: 1.1em;
 }
-.reveal section[data-background-color="#0073A3"] em {
+.reveal section[data-background-color="#22C55E"] em {
   color: #a5f3fc;
 }
-.reveal section[data-background-color="#0073A3"] strong {
+.reveal section[data-background-color="#22C55E"] strong {
   color: #ffffff;
 }
-.reveal section[data-background-color="#0073A3"] code {
+.reveal section[data-background-color="#22C55E"] code {
   background: rgba(255, 255, 255, 0.15);
   color: #ffffff;
+}
+.reveal section[data-background-color="#22C55E"] a {
+  color: #bbf7d0;
 }
 
 /* ── Two-column layout ── */

@@ -9,7 +9,7 @@ set_option linter.unusedVariables false
 # Monads
 
 %%%
-backgroundColor := some "#0073A3"
+backgroundColor := some "#22C55E"
 %%%
 
 In Mathematics and Programming
@@ -109,7 +109,7 @@ Given a monad `T` on `C`, the *Kleisli category* has:
 # Thank You
 
 %%%
-backgroundColor := some "#0073A3"
+backgroundColor := some "#22C55E"
 %%%
 
 *Beneficial AI Foundation*

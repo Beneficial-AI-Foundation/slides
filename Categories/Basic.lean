@@ -9,7 +9,7 @@ set_option linter.unusedVariables false
 # Category Theory
 
 %%%
-backgroundColor := some "#0073A3"
+backgroundColor := some "#22C55E"
 %%%
 
 From Sets to Categories
@@ -18,13 +18,13 @@ Beneficial AI Foundation
 
 # Sets, Elements, and Functions
 
-In set theory, foundationally, we work with three concepts:
+In set theory, we work with three concepts:
 
 - *Sets*: collections like $`\mathbb{N}`, $`\mathbb{R}`, $`\{1, 2, 3\}`
 - *Elements*: $`x \in S` — an element belongs to a set
 - *Functions*: $`f : A \to B` — a mapping between sets
 
-But structurally, can we simplify this?
+But, can we simplify this? Can we express one concept in terms of the other two?
 
 # Elements as Functions
 
@@ -201,7 +201,7 @@ Instead of asking "what are the elements?", we ask:
 # Thank You
 
 %%%
-backgroundColor := some "#0073A3"
+backgroundColor := some "#22C55E"
 %%%
 
 *Beneficial AI Foundation*
