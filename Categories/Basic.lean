@@ -149,13 +149,15 @@ A ───→ B ───→ C
 
 # Representing Categories
 
-Given a small category $`\mathcal{C}`, can we *represent* it using sets and functions?
+Given a small category $`\mathcal{C}`, can we *represent* it (or its opposite) using sets and functions?
 
-Pick any object $`a` in $`\mathcal{C}`. For each object $`b`, consider the set of morphisms:
+Pick any object $`X` in $`\mathcal{C}`. For each object $`Y`, consider the set:
 
-$$`\mathcal{C}[b, a] = \mathrm{Hom}(b, a)`
+$$`\mathcal{C}[Y, X]`
 
-This defines a functor $`h_a : \mathcal{C}^{\mathrm{op}} \to \mathbf{Set}`, called a *presheaf*.
+For a morphism $`g : Z \to Y`, we get a function $`\mathcal{C}[Y, X] \to \mathcal{C}[Z, X]` by precomposition: $`f \mapsto f \circ g`.
+
+This defines a functor $`\mathcal{C}[-,X] : \mathcal{C}^{\mathrm{op}} \to \mathbf{Set}`, called a *presheaf*.
 
 # What is a Functor?
 
