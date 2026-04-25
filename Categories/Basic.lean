@@ -16,14 +16,15 @@ From Sets to Categories
 
 Beneficial AI Foundation
 
-# Sets: Collections of Elements
+# Sets, Elements, and Functions
 
-In set theory, we think of sets as *collections of elements*.
+In set theory, we work with three concepts:
 
-- The set `{1, 2, 3}` contains the elements `1`, `2`, and `3`
-- An element `x ∈ S` is "inside" the set `S`
+- *Sets*: collections like `ℕ`, `ℝ`, `{1, 2, 3}`
+- *Elements*: `x ∈ S` — an element belongs to a set
+- *Functions*: `f : A → B` — a mapping between sets
 
-But there's another way to think about elements...
+But can we simplify this?
 
 # Elements as Functions
 
@@ -31,7 +32,9 @@ An element `x ∈ S` can be viewed as a *function* from a one-point set `*` to `
 
 `x : * → S`
 
-This shift in perspective — from "being in" to "mapping into" — is the first step toward categorical thinking.
+Now we only have *sets* and *functions between them*!
+
+This shift in perspective — from "sets, elements, and functions" to "just sets and functions" — is the first step toward categorical thinking.
 
 # Types Are Not Collections
 
@@ -47,6 +50,8 @@ inductive Nat where
 
 - `zero` is a function `* → Nat`
 - `succ` is a function `Nat → Nat`
+
+The type `Nat` is *inductively generated* by these constructors.
 
 # Matrices as Linear Maps
 
