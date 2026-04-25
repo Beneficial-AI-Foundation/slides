@@ -376,6 +376,14 @@ html, body {
   display: none;
 }
 
+/* ── Math (KaTeX) styling ── */
+.reveal .katex,
+.reveal .katex-display,
+.reveal .math,
+.reveal mjx-container {
+  background: transparent !important;
+}
+
 /* ── Table styling ── */
 .reveal table {
   font-size: 0.75em;
