@@ -13,6 +13,9 @@ lean_lib Categories where
 lean_lib Monads where
   roots := #[`Monads.Basic]
 
+lean_lib SSProve where
+  roots := #[`SSProve.Basic]
+
 @[default_target]
 lean_exe tutorialsMain where
   root := `Main

@@ -1,6 +1,7 @@
 import VersoSlides
 import Categories.Basic
 import Monads.Basic
+import SSProve.Basic
 
 open VersoSlides
 open System
@@ -75,5 +76,10 @@ def main : IO UInt32 := do
   let monadsDir := "_site/monads"
   let _ ← slidesMain (config := { config with outputDir := monadsDir }) (doc := %doc Monads.Basic)
   postProcessSlides monadsDir "baif.png" "Monads" "In Mathematics and Programming" "Beneficial AI Foundation"
+
+  -- Build SSProve slides
+  let ssproveDir := "_site/ssprove"
+  let _ ← slidesMain (config := { config with outputDir := ssproveDir }) (doc := %doc SSProve.Basic)
+  postProcessSlides ssproveDir "baif.png" "SSProve" "Modular Cryptographic Proofs in Coq" "Beneficial AI Foundation"
 
   return 0
