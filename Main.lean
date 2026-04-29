@@ -2,6 +2,7 @@ import VersoSlides
 import Categories.Basic
 import Monads.Basic
 import SSProve.Basic
+import Double.Basic
 
 open VersoSlides
 open System
@@ -81,5 +82,10 @@ def main : IO UInt32 := do
   let ssproveDir := "_site/ssprove"
   let _ ← slidesMain (config := { config with outputDir := ssproveDir }) (doc := %doc SSProve.Basic)
   postProcessSlides ssproveDir "baif.png" "SSProve" "Modular Cryptographic Proofs in Coq" "Beneficial AI Foundation"
+
+  -- Build Double Categories slides
+  let doubleDir := "_site/double"
+  let _ ← slidesMain (config := { config with outputDir := doubleDir }) (doc := %doc Double.Basic)
+  postProcessSlides doubleDir "baif.png" "Double Categories" "Categories Internal to Cat" "Beneficial AI Foundation"
 
   return 0

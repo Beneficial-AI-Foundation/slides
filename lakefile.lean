@@ -16,6 +16,9 @@ lean_lib Monads where
 lean_lib SSProve where
   roots := #[`SSProve.Basic]
 
+lean_lib Double where
+  roots := #[`Double.Basic]
+
 @[default_target]
 lean_exe tutorialsMain where
   root := `Main
