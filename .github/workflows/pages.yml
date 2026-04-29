@@ -69,11 +69,19 @@ jobs:
             <ul>
               <li>
                 <a href="categories/">Category Theory</a>
-                <p>Introduction to category theory</p>
+                <p>From sets to categories</p>
               </li>
               <li>
                 <a href="monads/">Monads</a>
-                <p>Monads in math and programming</p>
+                <p>Monads in mathematics and programming</p>
+              </li>
+              <li>
+                <a href="double/">Double Categories</a>
+                <p>Categories internal to Cat</p>
+              </li>
+              <li>
+                <a href="ssprove/">SSProve</a>
+                <p>Modular cryptographic proofs in Coq</p>
               </li>
             </ul>
           </body>
