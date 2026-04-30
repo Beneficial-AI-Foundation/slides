@@ -6,6 +6,8 @@ Slide presentations built with [Lean Verso Slides](https://github.com/leanprover
 
 - [Categories](https://beneficial-ai-foundation.github.io/tutorials/categories/) — Category theory
 - [Monads](https://beneficial-ai-foundation.github.io/tutorials/monads/) — Monads
+- [Double Categories](https://beneficial-ai-foundation.github.io/tutorials/double/) — Double categories
+- [SSProve](https://beneficial-ai-foundation.github.io/tutorials/ssprove/) — Cryptographic proofs
 
 ## Prerequisites
 
@@ -41,6 +43,8 @@ The generated slides will be in the `_site/` directory.
 
 - [Categories](http://localhost:8000/categories) — Introduction to category theory
 - [Monads](http://localhost:8000/monads) — Monads in math and programming
+- [Double Categories](http://localhost:8000/double) — Categories internal to Cat
+- [SSProve](http://localhost:8000/ssprove) — Modular cryptographic proofs in Coq
 
 ## Project Structure
 
@@ -49,6 +53,10 @@ The generated slides will be in the `_site/` directory.
 │   └── Basic.lean           # Category theory slides
 ├── Monads/
 │   └── Basic.lean           # Monads slides
+├── Double/
+│   └── Basic.lean           # Double categories slides
+├── SSProve/
+│   └── Basic.lean           # SSProve slides
 ├── Main.lean                # Executable that generates all slides
 ├── lakefile.lean            # Lake build configuration
 ├── lean-toolchain           # Specifies Lean version

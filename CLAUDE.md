@@ -21,6 +21,8 @@ This project generates reveal.js slide presentations using [verso-slides](https:
 ### Slide Content
 - `Categories/Basic.lean` — Category theory slides
 - `Monads/Basic.lean` — Monads slides
+- `SSProve/Basic.lean` — SSProve cryptographic proofs slides
+- `Double/Basic.lean` — Double categories slides
 - Slides use `#doc (Slides) "Title" =>` syntax with markdown-like content
 
 ### Build Pipeline
@@ -36,6 +38,12 @@ This project generates reveal.js slide presentations using [verso-slides](https:
 2. Add `lean_lib NewTopic` to `lakefile.lean`
 3. Import in `Main.lean` and add `slidesMain` + `postProcessSlides` call
 4. **Important**: The title/subtitle in `postProcessSlides` must exactly match the slide content for transformation to work
+5. Update `README.md`:
+   - Add to "Live Site" section with the GitHub Pages URL
+   - Add to "Tutorials" section with localhost URL
+   - Add to "Project Structure" tree
+6. Update `.github/workflows/pages.yml`:
+   - Add a new `<li>` entry in the "Create index page" step with title, link, and description
 
 ### Title Slide Format
 Title and thank-you slides must follow this pattern in the `.lean` file:
