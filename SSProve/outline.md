@@ -1,4 +1,4 @@
-* title page
+# Title: SSProve (Modular Cryptographic Proofs in Coq)
 
 # Motivation
 * The challenge of cryptographic proofs: complex, error-prone, hard to verify
@@ -49,3 +49,5 @@
 * What SSProve enables
 * Summary: the SSProve approach
 * The big idea
+
+# Thank you

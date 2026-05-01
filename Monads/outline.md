@@ -1,4 +1,4 @@
-* title page
+# Title: Monads (In Mathematics and Programming)
 
 # What is a Monad?
 * Definition: type constructor M, pure operation, bind operation
@@ -14,3 +14,5 @@
 * Monad laws expressed categorically
 * The Kleisli category: objects same as C, morphisms are Kleisli arrows
 * Next steps: transformers, free monads, comonads, algebraic effects
+
+# Thank you

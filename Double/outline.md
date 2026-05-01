@@ -1,4 +1,4 @@
-* title page
+# Title: Double Categories (Categories Internal to Cat)
 
 # Internal Categories
 * The idea: what if objects and morphisms are themselves categories?
@@ -36,3 +36,5 @@
 * Bimodules in Span = profunctors
 * The double category of monads: Mnd(Span) ≃ Prof
 * Bimodules are the natural 1-cells between monads
+
+# Thank you
