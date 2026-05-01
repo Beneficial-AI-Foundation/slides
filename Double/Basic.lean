@@ -16,6 +16,14 @@ Categories Internal to Cat
 
 Beneficial AI Foundation
 
+# Internal Categories
+
+%%%
+state := some "section-divider"
+%%%
+
+Categories inside categories
+
 # The Idea: Categories All the Way Down
 
 A category has *objects* and *morphisms*.
@@ -69,6 +77,14 @@ Let $`\mathcal{A} = \mathbf{Set}`:
 This is exactly the definition of a *small category*!
 
 Every small category is a category internal to $`\mathbf{Set}`.
+
+# Double Categories
+
+%%%
+state := some "section-divider"
+%%%
+
+Two dimensions of composition
 
 # Category Internal to Cat
 
@@ -149,6 +165,14 @@ $$`(\alpha \circ_v \beta) \circ_h (\gamma \circ_v \delta) = (\alpha \circ_h \gam
 
 This ensures the two compositions are compatible.
 
+# Examples
+
+%%%
+state := some "section-divider"
+%%%
+
+Squares, spans, and profunctors
+
 # Example: Squares in a Category
 
 Given any category $`\mathcal{C}`, form $`\mathbf{Sq}(\mathcal{C})`:
@@ -202,6 +226,14 @@ Profunctors generalize functors and relations.
 
 # Why Double Categories?
 
+%%%
+state := some "section-divider"
+%%%
+
+Beyond 2-categories
+
+# Why Double Categories?
+
 2-categories have only *one* kind of 1-morphism.
 
 Double categories have *two*: horizontal and vertical.
@@ -210,6 +242,14 @@ This models situations with two different "directions":
 - Spaces vs. paths
 - Types vs. terms
 - Syntax vs. semantics
+
+# Monads and Bimodules
+
+%%%
+state := some "section-divider"
+%%%
+
+Categories as monads in Span
 
 # Monads in 2-Categories
 

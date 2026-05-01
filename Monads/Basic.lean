@@ -18,6 +18,14 @@ Beneficial AI Foundation
 
 # What is a Monad?
 
+%%%
+state := some "section-divider"
+%%%
+
+Definition and laws
+
+# What is a Monad?
+
 A monad is a structure that combines:
 
 - A type constructor `M`
@@ -34,6 +42,14 @@ A monad is a structure that combines:
 
 3. *Associativity*
    `(m >>= f) >>= g = m >>= (λx => f x >>= g)`
+
+# Monads in Practice
+
+%%%
+state := some "section-divider"
+%%%
+
+Common examples in programming
 
 # Example: Option
 
@@ -75,6 +91,14 @@ def greet : IO Unit := do
   let name ← stdin.getLine
   IO.println s!"Hello, {name.trim}!"
 ```
+
+# Categorical Perspective
+
+%%%
+state := some "section-divider"
+%%%
+
+The mathematical foundations
 
 # Monads in Category Theory
 

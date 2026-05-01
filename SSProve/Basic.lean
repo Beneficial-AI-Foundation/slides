@@ -16,6 +16,14 @@ Modular Cryptographic Proofs in Coq
 
 Beneficial AI Foundation
 
+# Motivation
+
+%%%
+state := some "section-divider"
+%%%
+
+Why machine-checked cryptography?
+
 # The Challenge of Cryptographic Proofs
 
 Security proofs in cryptography are:
@@ -71,6 +79,14 @@ Each step:
 - Bounds the advantage difference
 
 *Sum* the bounds to get overall security.
+
+# Packages
+
+%%%
+state := some "section-divider"
+%%%
+
+Modular composition of cryptographic systems
 
 # What is a Package?
 
@@ -190,6 +206,14 @@ For composition to be valid:
 
 SSProve proves algebraic laws hold when validity is satisfied.
 
+# Proving Security
+
+%%%
+state := some "section-divider"
+%%%
+
+Games and relational logic
+
 # Security Games as Packages
 
 A *security game* is just a package with specific structure:
@@ -252,6 +276,14 @@ $$`\mathsf{if}\ b_1\ \mathsf{then}\ c_1\ \mathsf{else}\ d_1 \sim \mathsf{if}\ b_
 - Handle implementation details
 
 SSProve *connects* both levels.
+
+# Categorical Foundations
+
+%%%
+state := some "section-divider"
+%%%
+
+Relative monads for cryptography
 
 # What is a Monad?
 
@@ -357,6 +389,14 @@ The math guarantees the package laws hold!
 ```
 
 Relative monads bridge different categorical worlds.
+
+# Case Studies
+
+%%%
+state := some "section-divider"
+%%%
+
+PRF, ElGamal, and KEM-DEM
 
 # Case Study: PRF Security
 
