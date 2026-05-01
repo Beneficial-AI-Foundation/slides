@@ -2,6 +2,10 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Important Guidelines
+
+- **Do NOT commit or push** without explicit user request. Wait for the user to say "commit", "push", or use `/push` before running any git commit/push commands.
+
 ## Build Commands
 
 ```bash
@@ -30,7 +34,7 @@ This project generates reveal.js slide presentations using [verso-slides](https:
 2. `postProcessSlides` transforms the HTML:
    - Injects `static/custom.css` for BAIF branding
    - Adds logo headers to content slides
-   - Transforms title/thank-you slides to special layout (logo on top, blue band below)
+   - Transforms title/thank-you slides to special layout (logo on top, green band below)
    - Inlines hover data for offline viewing
 
 ### Adding a New Tutorial
@@ -46,12 +50,12 @@ This project generates reveal.js slide presentations using [verso-slides](https:
    - Add a new `<li>` entry in the "Create index page" step with title, link, and description
 
 ### Title Slide Format
-Title and thank-you slides must follow this pattern in the `.lean` file:
+Title and thank-you slides use the `state` attribute:
 ```lean
 # Slide Title
 
 %%%
-backgroundColor := some "#0073A3"
+state := some "title-slide"
 %%%
 
 Subtitle text
@@ -59,7 +63,18 @@ Subtitle text
 Beneficial AI Foundation
 ```
 
-The `postProcessSlides` function matches this exact HTML structure to transform it.
+Section dividers use:
+```lean
+# Section Name
+
+%%%
+state := some "section-divider"
+%%%
+
+Subtitle text
+```
+
+The `postProcessSlides` function transforms `data-state="title-slide"` sections into the special layout with logo and green band.
 
 ## Custom Commands
 

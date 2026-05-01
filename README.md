@@ -1,8 +1,8 @@
-# Tutorials
+# Slides
 
 Slide presentations built with [Lean Verso Slides](https://github.com/leanprover/verso-slides).
 
-## Live Site
+## Tutorials
 
 - [Categories](https://beneficial-ai-foundation.github.io/tutorials/categories/) — Category theory
 - [Monads](https://beneficial-ai-foundation.github.io/tutorials/monads/) — Monads
