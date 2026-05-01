@@ -9,7 +9,7 @@ set_option linter.unusedVariables false
 # SSProve
 
 %%%
-backgroundColor := some "#22C55E"
+state := some "title-slide"
 %%%
 
 Modular Cryptographic Proofs in Coq
@@ -456,7 +456,7 @@ Instead of trusting paper proofs, we can *verify* them.
 # Thank You
 
 %%%
-backgroundColor := some "#22C55E"
+state := some "title-slide"
 %%%
 
 *Beneficial AI Foundation*

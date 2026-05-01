@@ -9,7 +9,7 @@ set_option linter.unusedVariables false
 # Double Categories
 
 %%%
-backgroundColor := some "#22C55E"
+state := some "title-slide"
 %%%
 
 Categories Internal to Cat
@@ -444,7 +444,7 @@ The double category $`\mathbf{Prof}` arises as $`\mathbf{Mnd}(\mathbf{Span})`!
 # Thank You
 
 %%%
-backgroundColor := some "#22C55E"
+state := some "title-slide"
 %%%
 
 *Beneficial AI Foundation*

@@ -9,12 +9,20 @@ set_option linter.unusedVariables false
 # Category Theory
 
 %%%
-backgroundColor := some "#22C55E"
+state := some "title-slide"
 %%%
 
 From Sets to Categories
 
 Beneficial AI Foundation
+
+# Material → Structural
+
+%%%
+state := some "section-divider"
+%%%
+
+Rethinking mathematical foundations
 
 # Sets, Elements, and Functions
 
@@ -63,6 +71,14 @@ $$`A : \mathbb{R}^n \to \mathbb{R}^m`
 - Output dimension: $`m`
 
 We want a *coordinate-free* view of linear algebra.
+
+# Monoids → Categories
+
+%%%
+state := some "section-divider"
+%%%
+
+From partial to total structure
 
 # Square Matrices Form a Monoid
 
@@ -147,6 +163,14 @@ A ───→ B ───→ C
 - Objects: $`A`, $`B`, $`C`
 - Morphisms: $`f`, $`g`, $`g \circ f`, and identities
 
+# Representations and Semantics
+
+%%%
+state := some "section-divider"
+%%%
+
+Embedding categories into Sets
+
 # Representing Categories
 
 Given a small category $`\mathcal{C}`, can we *represent* it (or its opposite) using sets and functions?
@@ -201,7 +225,7 @@ Instead of asking "what are the elements?", we ask:
 # Thank You
 
 %%%
-backgroundColor := some "#22C55E"
+state := some "title-slide"
 %%%
 
 *Beneficial AI Foundation*
